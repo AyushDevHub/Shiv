@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow:-moz-hidden-unscrollable; */
+  background-size: 1000px;
+  background-color: pink;
+  background-position: center center;
+}
+h1{
+  position: absolute;
+  top: 30px;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+h1 span{
+  color: red;
+}
+
+
+.wrapper {
+  position: relative;
+  top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.effect-wrapper {
+  text-align: center;
+  font-weight: normal;
+}
+
+#typed {
+  font-weight: bold;
+  color: red;
+}
+
+/* .cursor {
+  display: inline-block;
+  background-color: #b0ff95;
+  animation: blinker 800ms infinite;
+} */
+
+.cursor.typing-true {
+  animation: none;
+}
+
+/* @keyframes blinker {
+	0% { background-color: red; }
+	50% { background-color: transparent; }
+	100% { background-color: red; }
+} */
+
+
+
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+/*  min-width: 800px; */
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background: url('./images/pngwing.com\ \(4\)\ \(1\).png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 120px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  
+  filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+}
